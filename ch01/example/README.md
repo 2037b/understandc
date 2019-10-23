@@ -5,4 +5,4 @@ hello world
 printf demo
 
 # e02.c
-求长方形面积
+求长方形de面积
