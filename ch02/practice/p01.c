@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void main() {
     int x, y;
     printf("%s\n", "请输入两个整数。");
