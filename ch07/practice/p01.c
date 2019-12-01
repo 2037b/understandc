@@ -3,7 +3,6 @@
 //
 
 #include <stdio.h>
-
 int main(void) {
   printf("sizeof(1)=%d\n", sizeof(1));
   printf("sizeof(+1)=%d\n", sizeof(+1));
