@@ -1,0 +1,27 @@
+#include<stdio.h>
+enum animal {Dog, Cat, Monkey, Invalid};
+void dog(void) {puts("汪汪");}
+void cat(void) {puts("喵");}
+void monkey(void) {puts("唧唧");}
+enum animal select(void){
+	int tmp;
+	do{
+		printf("0...狗  1...猫  2..猴  3...结束\n");
+		scanf("%d",&tmp);
+	}while(tmp<Dog||tmp>Invalid);
+	return tmp;
+}
+int main(int argc, char const *argv[])
+{
+	enum animal selected;
+	do{
+		// switch(select()){
+		switch(selected=select()){	
+			case Dog:dog();break;
+			case Cat:cat();break;
+			case Monkey:monkey();break;
+		}
+	}while(selected!=Invalid);
+	//}while(select()!=Invalid);
+	return 0;
+}
